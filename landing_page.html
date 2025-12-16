@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Landing Page</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <style>
+        :root {
+        /* Light Theme */
+        --bg-main: #ffffff;
+        --bg-card: #f9fafb;
+        --text-main: #111827;
+        --text-muted: #6b7280;
+        --primary: #3b82f6;
+        }
+
+        .dark {
+        /* Dark Theme */
+        --bg-main: #0f172a;
+        --bg-card: #1e293b;
+        --text-main: #f8fafc;
+        --text-muted: #94a3b8;
+        --primary: #60a5fa;
+        }
+
+        @keyframes float {
+            0% {
+                transform: translateY(0px);
+            }
+            50% {
+                transform: translateY(-15px);
+            }
+            100% {
+                transform: translateY(0px);
+            }
+            }
+
+            .float-animation {
+            animation: float 4s ease-in-out infinite;
+            }
+
+        
+        </style>
+
+</head>
+<body>
+
+    <!-- navbar start -->
+    <nav class="flex justify-between items-center px-6 py-4 bg-[var(--bg-main)] shadow-md">
+        <div class="text-2xl font-bold text-[var(--primary)]">AI Voice</div>
+        <div class="space-x-3 md:space-x-6">
+            <a href="#home" class="text-[var(--text-main)] hover:text-[var(--primary)] transition">Home</a>
+            <a href="#features" class="text-[var(--text-main)] hover:text-[var(--primary)] transition">Features</a>
+            <a href="#pricing" class="text-[var(--text-main)] hover:text-[var(--primary)] transition">Pricing</a>
+            <a href="#contact_us" class="text-[var(--text-main)] hover:text-[var(--primary)] transition">Contact</a>
+        </div>
+    </nav>
+
+    <!-- hero section -->
+    <section id="home" class="flex flex-col-reverse md:flex-row items-center h-screen  px-6 md:px-20 py-14 bg-[var(--bg-card)]">
+        <div class="md:w-1/2 text-center md:text-left">
+            <h1 class="text-3xl md:text-5xl font-bold text-[var(--text-main)]">
+                Generate AI Voice Instantly
+            </h1>
+            <p class="mt-4 text-[var(--text-muted)] text-sm md:text-base">
+                Create realistic voice output for your apps and projects in seconds.
+            </p>
+            <button id="btn" class="mt-6 bg-[var(--primary)] text-white px-6 py-3 rounded-lg transition-all duration-300 hover:scale-105">
+                Get Started
+            </button>
+        </div>
+        <div class="md:w-1/2 mb-8 md:mb-0 flex justify-center float-animation">
+            <img src="https://imgs.search.brave.com/C2gwjIz1WDRh5TkU3fHxCF8JfmdC6r0Qqc1P5d3nGeo/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9pbWd2/My5mb3Rvci5jb20v/aW1hZ2VzL2dhbGxl/cnkvZ2VuZXJhdGUt/YS1jeWJlcnB1bmst/YWktYXZhdGFyLW9m/LWEtZmVtYWxlLWlu/LWZvdG9yLmpwZw" alt="hero image" class="w-2/3 rounded-full">
+        </div>
+    </section>
+
+    <!-- features section start -->
+
+   <section id="features" class="bg-[var(--bg-card)] py-16 px-6 md:px-20">
+        <h2 class="text-3xl font-bold text-center text-[var(--text-main)] mb-12">Our Features</h2>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <!-- Card 1 -->
+            <div class="bg-[var(--bg-main)] p-6 rounded-xl shadow-md hover:-translate-y-2 transition flex flex-col items-center text-center">
+            <div class="w-16 h-16 rounded-full bg-blue-100 flex items-center justify-center mb-4">
+                <span class="text-[var(--primary)] text-2xl font-bold">🚀</span>
+            </div>
+            <h3 class="text-xl font-semibold text-[var(--text-main)] mb-2">Fast Performance</h3>
+            <p class="text-[var(--text-muted)] text-sm">Optimized code for lightning-fast performance and smooth user experience.</p>
+            </div>
+
+            <!-- Card 2 -->
+            <div class="bg-[var(--bg-main)] p-6 rounded-xl shadow-md hover:-translate-y-2 transition flex flex-col items-center text-center">
+            <div class="w-16 h-16 rounded-full bg-green-100 flex items-center justify-center mb-4">
+                <span class="text-green-500 text-2xl font-bold">💡</span>
+            </div>
+            <h3 class="text-xl font-semibold text-[var(--text-main)] mb-2">AI Powered</h3>
+            <p class="text-[var(--text-muted)] text-sm">Leverage AI technology to automate tasks and enhance productivity.</p>
+            </div>
+
+            <!-- Card 3 -->
+            <div class="bg-[var(--bg-main)] p-6 rounded-xl shadow-md hover:-translate-y-2 transition flex flex-col items-center text-center">
+            <div class="w-16 h-16 rounded-full bg-yellow-100 flex items-center justify-center mb-4">
+                <span class="text-yellow-500 text-2xl font-bold">🔒</span>
+            </div>
+            <h3 class="text-xl font-semibold text-[var(--text-main)] mb-2">Secure</h3>
+            <p class="text-[var(--text-muted)] text-sm">Top-notch security to keep your data safe and private at all times.</p>
+            </div>
+
+            <!-- Card 4 -->
+            <div class="bg-[var(--bg-main)] p-6 rounded-xl shadow-md hover:-translate-y-2 transition flex flex-col items-center text-center">
+            <div class="w-16 h-16 rounded-full bg-red-100 flex items-center justify-center mb-4">
+                <span class="text-red-500 text-2xl font-bold">⚡</span>
+            </div>
+            <h3 class="text-xl font-semibold text-[var(--text-main)] mb-2">Real-Time Updates</h3>
+            <p class="text-[var(--text-muted)] text-sm">Stay updated with instant notifications and live data updates.</p>
+            </div>
+
+            <!-- Card 5 -->
+            <div class="bg-[var(--bg-main)] p-6 rounded-xl shadow-md hover:-translate-y-2 transition flex flex-col items-center text-center">
+            <div class="w-16 h-16 rounded-full bg-purple-100 flex items-center justify-center mb-4">
+                <span class="text-purple-500 text-2xl font-bold">🌐</span>
+            </div>
+            <h3 class="text-xl font-semibold text-[var(--text-main)] mb-2">Global Access</h3>
+            <p class="text-[var(--text-muted)] text-sm">Access your account and data securely from anywhere in the world.</p>
+            </div>
+
+            <!-- Card 6 -->
+            <div class="bg-[var(--bg-main)] p-6 rounded-xl shadow-md hover:-translate-y-2 transition flex flex-col items-center text-center">
+            <div class="w-16 h-16 rounded-full bg-pink-100 flex items-center justify-center mb-4">
+                <span class="text-pink-500 text-2xl font-bold">⚙️</span>
+            </div>
+            <h3 class="text-xl font-semibold text-[var(--text-main)] mb-2">Customizable</h3>
+            <p class="text-[var(--text-muted)] text-sm">Fully customizable features to fit your unique business needs.</p>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Pricing secition -->
+     <section id="pricing" class="bg-[var(--bg-card)] py-16 px-6 md:px-20">
+    <h2 class="text-3xl font-bold text-center text-[var(--text-main)] mb-12">Pricing Plans</h2>
+
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+
+        <!-- Basic Plan -->
+        <div class="bg-[var(--bg-main)] p-8 rounded-xl shadow-md hover:-translate-y-2 transition flex flex-col items-center text-center">
+        <h3 class="text-xl font-semibold text-[var(--text-main)] mb-2">Basic</h3>
+        <p class="text-[var(--text-muted)] text-sm mb-6">For personal use</p>
+        <span class="text-4xl font-bold text-[var(--text-main)] mb-6">$9<span class="text-base font-normal">/month</span></span>
+        <ul class="text-[var(--text-muted)] text-sm mb-6 space-y-2">
+            <li class="flex items-center space-x-2">
+                <span>✅</span>
+                <span>10 Projects</span>
+            </li>
+            <li class="flex items-center space-x-2">
+                <span>✅</span>
+                <span>Basic Support</span>
+            </li>
+            <li class="flex items-center space-x-2">
+                <span>✅</span>
+                <span>5 GB Storage</span>
+            </li>
+        </ul>
+
+        <button class="bg-[var(--primary)] text-white px-6 py-3 rounded-lg transition-all duration-300 hover:scale-105">
+            Choose Plan
+        </button>
+        </div>
+
+        <!-- Standard Plan (Most Popular) -->
+        <div class="bg-[var(--bg-main)] p-8 rounded-xl shadow-lg border-2 border-[var(--primary)] flex flex-col items-center text-center relative">
+        <!-- Badge -->
+        <span class="absolute -top-4 px-4 py-1 bg-[var(--primary)] text-white text-sm font-semibold rounded-full">Most Popular</span>
+
+        <h3 class="text-xl font-semibold text-[var(--text-main)] mb-2">Standard</h3>
+        <p class="text-[var(--text-muted)] text-sm mb-6">For small teams</p>
+        <span class="text-4xl font-bold text-[var(--text-main)] mb-6">$29<span class="text-base font-normal">/month</span></span>
+        <ul class="text-[var(--text-muted)] text-sm mb-6 space-y-2">
+            <li class="flex items-center space-x-2"><span>✅</span><span> 50 Projects</span></li>
+            <li class="flex items-center space-x-2"><span>✅</span><span> Priority Support</span></li>
+            <li class="flex items-center space-x-2"><span>✅</span><span> 50 GB Storage</span></li>
+            <li class="flex items-center space-x-2"><span>✅</span><span> Analytics Dashboard</span></li>
+        </ul>
+        <button class="bg-[var(--primary)] text-white px-6 py-3 rounded-lg transition-all duration-300 hover:scale-105">
+            Choose Plan
+        </button>
+        </div>
+
+        <!-- Premium Plan -->
+        <div class="bg-[var(--bg-main)] p-8 rounded-xl shadow-md hover:-translate-y-2 transition flex flex-col items-center text-center">
+        <h3 class="text-xl font-semibold text-[var(--text-main)] mb-2">Premium</h3>
+        <p class="text-[var(--text-muted)] text-sm mb-6">For large teams & enterprises</p>
+        <span class="text-4xl font-bold text-[var(--text-main)] mb-6">$59<span class="text-base font-normal">/month</span></span>
+        <ul class="text-[var(--text-muted)] text-sm mb-6 space-y-2">
+            <li class="flex items-center space-x-2"><span>✅</span><span> Unlimited Projects</li>
+            <li class="flex items-center space-x-2"><span>✅</span><span> 24/7 Support</li>
+            <li class="flex items-center space-x-2"><span>✅</span><span> 200 GB Storage</li>
+            <li class="flex items-center space-x-2"><span>✅</span><span> Advanced Analytics</li>
+            <li class="flex items-center space-x-2"><span>✅</span><span> Custom Integrations</li>
+        </ul>
+        <button class="bg-[var(--primary)] text-white px-6 py-3 rounded-lg transition-all duration-300 hover:scale-105">
+            Choose Plan
+        </button>
+        </div>
+
+    </div>
+    </section>
+
+    <!-- contact us section -->
+
+    <section id="contact_us" class="bg-[var(--bg-main)] py-20 px-6 md:px-20">
+        <h2 class="text-3xl font-bold text-center text-[var(--text-main)] mb-4">
+            Get in Touch
+        </h2>
+        <p class="text-center text-[var(--text-muted)] mb-12">
+            Have questions? We'd love to hear from you.
+        </p>
+
+        <div class="max-w-5xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-10">
+
+            <!-- Left Info -->
+            <div class="space-y-6">
+            <div class="flex items-center space-x-4">
+                <div class="w-12 h-12 rounded-full bg-blue-100 flex items-center justify-center">
+                📧
+                </div>
+                <div>
+                <p class="font-semibold text-[var(--text-main)]">Email</p>
+                <p class="text-[var(--text-muted)]">support@aivoice.com</p>
+                </div>
+            </div>
+
+            <div class="flex items-center space-x-4">
+                <div class="w-12 h-12 rounded-full bg-green-100 flex items-center justify-center">
+                📞
+                </div>
+                <div>
+                <p class="font-semibold text-[var(--text-main)]">Phone</p>
+                <p class="text-[var(--text-muted)]">+91 98765 43210</p>
+                </div>
+            </div>
+
+            <div class="flex items-center space-x-4">
+                <div class="w-12 h-12 rounded-full bg-purple-100 flex items-center justify-center">
+                📍
+                </div>
+                <div>
+                <p class="font-semibold text-[var(--text-main)]">Location</p>
+                <p class="text-[var(--text-muted)]">India</p>
+                </div>
+            </div>
+            </div>
+
+            <!-- Right Form -->
+            <form class="bg-[var(--bg-card)] p-8 rounded-xl shadow-md space-y-6">
+            <div>
+                <label class="block text-sm font-medium text-[var(--text-main)] mb-1">
+                Name
+                </label>
+                <input
+                type="text"
+                placeholder="Your name"
+                class="w-full border rounded-lg px-4 py-2 focus:outline-none focus:ring-2 focus:ring-[var(--primary)]"
+                />
+            </div>
+
+            <div class="text-[var(--text-main)]">
+                <label class="block text-sm font-medium mb-1">
+                Email
+                </label>
+                <input
+                type="email"
+                placeholder="you@example.com"
+                class="w-full border rounded-lg px-4 py-2 focus:outline-none focus:ring-2 focus:ring-[var(--primary)]"
+                />
+            </div>
+
+            <div class="text-[var(--text-main)]">
+                <label class="block text-sm font-medium mb-1">
+                Message
+                </label>
+                <textarea
+                rows="4"
+                placeholder="Write your message..."
+                class="w-full border rounded-lg px-4 py-2 focus:outline-none focus:ring-2 focus:ring-[var(--primary)]"
+                ></textarea>
+            </div>
+
+            <button
+                type="submit"
+                class="w-full bg-[var(--primary)] text-white py-3 rounded-lg transition-all duration-300 hover:scale-105"
+            >
+                Send Message
+            </button>
+            </form>
+
+        </div>
+    </section>
+
+    <!-- Footer section -->
+
+    <footer class="bg-gray-900 text-[var(--text-muted)] py-12">
+        <div class="max-w-6xl mx-auto px-6 grid grid-cols-1 md:grid-cols-4 gap-8">
+
+            <div>
+            <h3 class="text-xl font-bold text-[var(--text-main)] mb-4">AI Voice</h3>
+            <p class="text-sm text-gray-400">
+                Convert text into realistic AI voices for your business.
+            </p>
+            </div>
+
+            <div>
+            <h4 class="font-semibold text-white mb-3">Product</h4>
+            <ul class="space-y-2 text-sm text-[var(--text-muted)]">
+                <li class="hover:text-[var(--text-main)] cursor-pointer"><a href="#features">Features</a></li>
+                <li class="hover:text-[var(--text-main)] cursor-pointer"><a href="#pricing">Pricing</a></li>
+                <li class="hover:text-[var(--text-main)] cursor-pointer"><a href="#contact_us">Contact</a></li>
+            </ul>
+            </div>
+
+            <div>
+            <h4 class="font-semibold text-white mb-3">Follow Us</h4>
+            <div class="flex space-x-4 text-lg">
+                <span class="hover:text-white cursor-pointer">🌐</span>
+                <span class="hover:text-white cursor-pointer">🐦</span>
+                <span class="hover:text-white cursor-pointer">📸</span>
+            </div>
+            </div>
+
+        </div>
+
+        <p class="text-center text-sm text-[var(--text-muted)] mt-10">
+            © 2025 AI Voice. All rights reserved.
+        </p>
+    </footer>
+
+
+
+
+
+    <script>
+        let btn = document.getElementById('btn');
+        btn.onclick = function() {
+            window.location.href = "https://aivoiceover.netlify.app/";
+        }
+
+        if (
+            window.matchMedia &&
+            window.matchMedia('(prefers-color-scheme: dark)').matches
+            ) {
+            document.documentElement.classList.add('dark');
+            }
+
+
+    </script>
+    
+</body>
+</html>

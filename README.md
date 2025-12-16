@@ -6,16 +6,19 @@ It showcases an AI-based voice generation product with a clean UI, dark/light th
 ---
 
 ## 🚀 Live Preview
-> (Optional: Add your live site link here)  
-Example: https://your-username.github.io/ai-voice
+> https://aivoice-landingpage.netlify.app/
 
 ---
 
 ## 📸 Screenshots
-> <img width="1366" height="768" alt="image" src="https://github.com/user-attachments/assets/f2ff1fae-1f4a-413e-9eb0-b43cbb16ef23" />
-<img width="1366" height="768" alt="image" src="https://github.com/user-attachments/assets/3e44d222-5c20-4b83-83ec-99ce6a4bc0f9" />
-<img width="1366" height="768" alt="image" src="https://github.com/user-attachments/assets/4872f77c-8ada-496e-8eee-ec8a76862fbb" />
-<img width="1366" height="768" alt="image" src="https://github.com/user-attachments/assets/c29b1c30-2ad8-41b0-b7fa-3e13e48202a8" />
+> <img width="1366" height="768" alt="image" src="https://github.com/user-attachments/assets/a63f92c2-b1dc-46d5-ba7e-2d7eb00c3b23" />
+<img width="1366" height="768" alt="image" src="https://github.com/user-attachments/assets/30b28782-ab63-4109-aa6b-472c46ffcae4" />
+<img width="1366" height="768" alt="image" src="https://github.com/user-attachments/assets/f69a6edf-7388-427e-843b-4f547965b79d" />
+<img width="1366" height="768" alt="image" src="https://github.com/user-attachments/assets/98e8c19e-4eaf-42ac-beba-7e69d07a4bc1" />
+
+
+
+
 
 
 
